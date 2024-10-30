@@ -1,5 +1,6 @@
 import React from "react";
 import { Mail, Github, Twitter, ChevronDown } from "lucide-react";
+import RealisticLightspeedWarpDrive from '../components/realistic-lightspeed-warp-drive';
 import {
   Accordion,
   AccordionContent,
@@ -11,7 +12,9 @@ import { workExperience } from "@/constants/workExperience";
 
 const ProfilePage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black backdrop-blur-[2px] bg-black/30 text-gray-200">
+    <div className="relative min-h-screen">
+      <RealisticLightspeedWarpDrive />
+    <div className="relative z-10 min-h-screen bg-black/20 backdrop-transparent-md border border-white/10 rounded-lg text-gray-200">
       <div className="max-w-2xl mx-auto py-16 px-7">
         <div className="space-y-6">
           {/* Header */}
@@ -133,6 +136,7 @@ const ProfilePage = () => {
         </div>
       </div>
     </div>
+  </div>
   );
 };
 
